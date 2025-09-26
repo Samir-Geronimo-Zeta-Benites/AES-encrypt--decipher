@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", function () {
       };
       reader.readAsText(archivo);
     } else {
-      mensaje.textContent = "⚠️ Archivo incompatible. Solo se permiten archivos .txt";
+      mensaje.textContent = "Archivo incompatible. Solo se permiten archivos .txt";
       this.value = ""; // limpiar selección
     }
   });

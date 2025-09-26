@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador AES</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="aes.js"></script>
+</head>
+<body>
+  <div class="container">
+        <h1>🔐 Encriptador AES</h1>
+        <label for="texto">Texto:</label><br>
+        <textarea id="texto" rows="10" cols="60" placeholder="Escribe aquí o sube un archivo"></textarea><br><br>
+        <div class="botones">
+            <button onclick="encriptar()">Encriptar</button>
+            <button onclick="desencriptar()">Desencriptar</button>
+            <button onclick="document.getElementById('fileInput').click()">Subir archivo .txt</button>
+            <input type="file" id="fileInput" accept=".txt" style="display: none;">
+            <p id="mensajeError" style="color: red; font-weight: bold;"></p>
+        </div>
+        <h2>Resultado:</h2>
+        <textarea id="resultado" rows="10" cols="60" readonly></textarea>
+    </div>
+</html>

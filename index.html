@@ -10,17 +10,18 @@
 </head>
 <body>
   <div class="container">
-        <h1>🔐 Encriptador AES</h1>
-        <label for="texto">Texto:</label><br>
-        <textarea id="texto" rows="10" cols="60" placeholder="Escribe aquí o sube un archivo"></textarea><br><br>
+        <h1>🐱‍👤 Encriptador AES</h1>
+        <h2 for="texto">Texto:</h2>
+        <textarea id="texto" placeholder="Escribe aquí o sube un archivo" style="color: white;"></textarea><br><br>
         <div class="botones">
-            <button onclick="encriptar()">Encriptar</button>
-            <button onclick="desencriptar()">Desencriptar</button>
+            <button id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+            <button id="btnDesencriptar" onclick="desencriptar()" >Desencriptar</button>
             <button onclick="document.getElementById('fileInput').click()">Subir archivo .txt</button>
             <input type="file" id="fileInput" accept=".txt" style="display: none;">
-            <p id="mensajeError" style="color: red; font-weight: bold;"></p>
-        </div>
-        <h2>Resultado:</h2>
-        <textarea id="resultado" rows="10" cols="60" readonly></textarea>
+            <button id="btnborrar" onclick="borrarContenido()">borrarContenido</button>
+            <p id="mensajeError"></p>
+          </div>
+          <h2>Resultado:</h2>
+        <textarea id="resultado" readonly style="color: white;"></textarea>
     </div>
 </html>
